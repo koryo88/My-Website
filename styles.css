@@ -1,0 +1,30 @@
+body {
+  background: no-repeat center url(file:///C:/Users/kevin/Pictures/sky.png);
+  height: 100%;
+  background-size: cover;
+}
+
+hr {
+border-color: gray;
+border-style: dotted none none;
+border-width: 4px;
+height: 0;
+width: 10%;
+}
+
+h1 {
+  color: #464159;
+}
+
+h2 {
+  color: #464159;
+}
+h3 {
+  color: #464159;
+}
+h4 {
+  color: #464159;
+}
+h5 {
+  color: #464159;
+}
