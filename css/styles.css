@@ -1,12 +1,46 @@
 body {
-  background-color: skyblue;
-  text-align: center;
+    background-color: skyblue;
+    font-family: Lucida Console, Monospace;
+    margin: 0;
 }
 
-.placeholder {
-font-weight: bold;
-  font-size: 50px;
-  font-family: 'Lexend Deca', sans-serif;
-  position: absolute;
-  margin: 25% 25%;
+#content {
+    
 }
+
+#title {
+    
+}
+
+.header {
+    text-align: center;
+    padding: 7% 0;
+    background-color: ivory;
+    }
+
+
+.name {
+    transform: rotate(-5deg);
+    text-shadow: 2px 2px skyblue;
+}
+
+.fas.fa-running {
+    position: absolute;
+    right: 80%;
+    }
+    
+    .fas.fa-biking {
+        position: absolute;
+        right: 15%;
+        top: 45%;
+    }
+    
+    .side {
+        border-right: solid;
+        border-left: solid;
+        border-color: darkblue;
+        }
+        
+        .mid {
+           
+        }
