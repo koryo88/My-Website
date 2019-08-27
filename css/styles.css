@@ -6,4 +6,7 @@ body {
 font-weight: bold;
   font-size: 25px;
   font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 25%;
 }
