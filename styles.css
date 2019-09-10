@@ -62,9 +62,10 @@ nav .navbar-nav li a {
 }
 
 li a:hover {
+  transition: 1s;
   background-color: gray;
   border-radius: 20%
-}
+  }
 
 footer {
   background-color: white;
