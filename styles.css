@@ -16,7 +16,13 @@ nav {
   font-family: 'Dancing Script', cursive;
   font-size: 8rem;
   padding-left: 150px;
+  animation: 3s ease-out 0s 1 sig;
 }
+
+@keyframes sig {
+   0%   { color: #393E46; }
+  50%    { color: gray;}
+      }
 
 @keyframes slideInFromBottom {
   0% {
