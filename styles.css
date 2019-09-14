@@ -1,3 +1,6 @@
+
+/* HTML Tags */
+
 body {
   background-color: #393E46;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -7,9 +10,27 @@ nav {
   padding-top: 50px;
 }
 
+li a:hover {
+  transition: 1s;
+  background-color: gray;
+  border-radius: 20%
+}
+
+footer {
+  background-color: white;
+  color: #393E46;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-top: 5px;
+}
+
+/* Classes */
+
 .top {
   margin-top: 5%;
-    }
+}
 
 .signature {
   color: white;
@@ -18,27 +39,6 @@ nav {
   padding-left: 150px;
   animation: 3s ease-out 0s 1 sig;
 }
-
-@keyframes sig {
-   0%   { color: #393E46; }
-  50%    { color: gray;}
-      }
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes menuOpacity {
-   0%   { opacity: 0; }
-  50%    { opacity: 0.5;}
-  100% { opacity: 1; }
-  0% {margin-right: 20px;}
-    }
 
 .profilePic img {
   height: 350px;
@@ -51,74 +51,128 @@ nav {
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
-.contentRow {
-  margin: 100px 100px;
-}
-
 .profileWriting {
   background-color: gray;
-  border-radius: 20%;
+  border-radius: 15%;
   padding: 40px;
   font-size: 1.5rem;
   animation: 1s ease-out 0s 1 slideInFromBottom;
-
 }
 
-nav .navbar-nav li a {
-  color: black !important;
-  font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 2rem;
-   animation: 1s ease-out 0s 1 menuOpacity;
-    }
-
-    nav .navbar-nav li {
-      padding-left: 50px;
-        }
-
-.navbar-nav {
-  padding-right: 10%;
-  flex-direction:row !important;
+.contentRow {
+  margin: 100px 100px;
 }
 
 .row {
   margin-top: 0;
 }
 
-li a:hover {
-  transition: 1s;
-  background-color: gray;
-  border-radius: 20%
-  }
-
-footer {
-  background-color: white;
-  color: #393E46;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  }
-
-  @media only screen and (max-width: 600px) {
-
-* {
-  text-align: center!important;
+.sightLine {
+  display: none;
 }
 
-    .signature {
-      font-size: 4rem;
-      padding-left: 0;
-    }
+/* Navigation styling */
 
-    nav .navbar-nav li a {
-      color: black !important;
-      font-family: 'Ubuntu Condensed', sans-serif;
+nav .navbar-nav li a {
+  color: black !important;
+  font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 2rem;
-        }
+  animation: 1s ease-out 0s 1 menuOpacity;
+}
 
-        nav .navbar-nav li {
-          padding-left: 10px;
+nav .navbar-nav li {
+  padding-left: 50px;
+}
 
-            }
+.navbar-nav {
+  margin-right: 10%;
+  flex-direction: row !important;
+  background-color: rgba(81, 103, 169, 0.3)
+}
 
+
+/* Keyframes */
+
+@keyframes sig {
+  0% {
+    color: #393E46;
   }
+
+  50% {
+    color: gray;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    margin-right: 20px;
+  }
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 950px) {
+  * {
+    text-align: center !important;
+  }
+
+  .signature {
+    font-size: 4rem;
+    padding-left: 0;
+  }
+
+  .profileWriting {
+    font-size: 1rem;
+  }
+
+  nav .navbar-nav li a {
+    color: black !important;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.25rem;
+  }
+
+  nav .navbar-nav li {
+    padding-left: 10px;
+      }
+
+  .sightLine {
+    display: inline;
+  }
+
+  .profilePic img {
+    height: 200px;
+  }
+
+  footer {
+    font-size: .75rem;
+  }
+
+.profilePic {
+  text-align: center!important;
+  padding-bottom: 5%;
+  padding-right: 0;
+}
+
+}
